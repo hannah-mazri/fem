@@ -17,8 +17,26 @@ body {
     padding: 0;
 }
 
+.flex-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "header"
+    "main-image"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+}
+
 header {
+    grid-area: header;
     padding: 1.8rem 2.2rem 1.2rem;
+}
+
+.main-image {
+    grid-area: main-image;
 }
 
 h1 {
@@ -35,10 +53,12 @@ h1 {
 }
 
 main {
+    grid-area: main;
     padding: 0 42px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .text-uppercase {
@@ -92,7 +112,63 @@ main {
     padding: 0 24px;
 }
 
+.main-image > picture > img {
+    width: 100%;
+}
+
 footer {
+    grid-area: footer;
     position: relative;
+    padding: 1.2rem;
     bottom: 0;
 }
+
+@media screen and (min-width: 769px) {
+    .flex-container {
+        /* background-color: greenyellow; */
+    }
+
+
+    .main {
+        /* background-color: pink; */
+    }
+
+    .main-image {
+        /* border: 10px solid green; */
+        width: fit-content;
+    }
+
+    .main-image > picture > img {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .main {
+        /* background-color: midnightblue; */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .flex-container {
+        grid-template-areas:
+    "header main-image"
+    "main main-image"
+    "main main-image"
+    "footer main-image";
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    .main {
+        /* background-color: khaki; */
+    }
+}
+
+/*
+@media screen and (max-width: 425px) {
+    
+}
+*/
