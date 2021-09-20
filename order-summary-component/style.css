@@ -1,0 +1,86 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html,
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  overflow: overlay;
+}
+#main {
+  background-image: url('./assets/pattern-background-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#card-container {
+  width: 300px;
+  height: 580px;
+  box-shadow: 0 8px 10px rgb(0 0 0 / 0.1);
+}
+#card-body {
+  padding: 0 24px 20px;
+}
+#change-link:hover {
+  color: hsl(245, 75%, 65%);
+  text-decoration: none;
+}
+#payment-link {
+  margin: 24px 0;
+  padding: 14px 0;
+  text-decoration: none;
+  box-shadow: 0 16px 16px rgb(0 0 0 / 0.2);
+}
+#payment-link:hover {
+  background-color: hsl(245, 75%, 65%);
+}
+#cancel-link {
+  background-color: transparent;
+  text-decoration: none;
+}
+#cancel-link:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+@media (min-width: 321px) {
+  #card-container {
+    width: 320px;
+  }
+}
+@media (min-width: 376px) {
+  #main {
+    background-image: url('./assets/pattern-background-desktop.svg');
+  }
+}
+@media (min-width: 426px) {
+  #card-container {
+    width: 360px;
+    height: 600px;
+  }
+}
+@media (min-width: 648px) {
+  #main {
+    padding: 48px 0;
+  }
+  #card-container {
+    width: 420px;
+  }
+}
+@media (min-width: 675px) {
+  #card-container {
+    width: 480px;
+    height: 720px;
+  }
+  #card-body {
+    padding: 0 48px;
+  }
+}
+@media (min-width: 1440px) {
+  #main {
+    padding: 0;
+  }
+}
