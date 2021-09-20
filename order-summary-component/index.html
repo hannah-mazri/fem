@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../utilities.css" />
+
+    <title>Order summary card</title>
+  </head>
+  <body class="m-0 p-0 bg-blue-100 text-base">
+    <main
+      id="main"
+      class="w-screen min-h-screen flex flex-col justify-center items-center"
+    >
+      <div
+        id="card-container"
+        class="flex flex-col bg-white rounded-2xl overflow-hidden"
+      >
+        <img
+          class="w-full m-0 p-0 object-fill"
+          src="./assets/illustration-hero.svg"
+          alt=""
+        />
+
+        <div
+          id="card-body"
+          class="flex flex-col flex-1 justify-center items-center"
+        >
+          <div class="text-center">
+            <h3 class="font-extrabold text-2xl text-blue-400">Order Summary</h3>
+            <p class="py-0 px-2 font-medium text-base text-blue-200">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+
+          <div
+            class="
+              box-border
+              flex
+              justify-between
+              items-center
+              rounded-2xl
+              bg-blue-50
+              w-full
+              my-2
+              p-4
+            "
+          >
+            <div class="flex items-center">
+              <img src="./assets/icon-music.svg" alt="" />
+              <div class="flex flex-col ml-4">
+                <div class="font-bold text-blue-400 mb-1">Annual Plan</div>
+                <span class="text-base text-blue-200">$59.99/year</span>
+              </div>
+            </div>
+            <a href="#" id="change-link" class="font-bold text-sm text-blue-300"
+              >Change</a
+            >
+          </div>
+
+          <a
+            href="#"
+            id="payment-link"
+            class="
+              w-full
+              rounded-lg
+              bg-blue-300
+              font-bold
+              text-blue-50 text-center
+            "
+            >Proceed to Payment</a
+          >
+          <a
+            href="../"
+            id="cancel-link"
+            class="font-black text-blue-200 border-0 py-4 px-0"
+            >Cancel Order</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
