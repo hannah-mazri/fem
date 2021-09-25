@@ -1,6 +1,4 @@
-import GEO_IPIFY_API_KEY from './apikey.js';
-
-var mymap = L.map('mapid', {
+let mymap = L.map('mapid', {
   zoomControl: false,
   center: [51.4934, 0.0098],
   zoom: 13,
@@ -20,12 +18,12 @@ L.tileLayer(
   }
 ).addTo(mymap);
 
-var myIcon = L.icon({
+let myIcon = L.icon({
   iconUrl: './images/icon-location.svg',
   iconSize: [32, 41],
 });
 
-var marker = L.marker([51.4934, 0.0098], { icon: myIcon }).addTo(mymap);
+let marker = L.marker([51.4934, 0.0098], { icon: myIcon }).addTo(mymap);
 
 async function initMap() {
   await fetchLatLong();
@@ -58,6 +56,7 @@ function search(event) {
 }
 
 async function fetchLatLong(ipAddress) {
+  const GEO_IPIFY_API_KEY = 'at_RCVsgw8PIyrCaIxyyl4UyfFgIaBaJ';
   const url = !ipAddress
     ? `https://geo.ipify.org/api/v1?apiKey=${GEO_IPIFY_API_KEY}`
     : `https://geo.ipify.org/api/v1?apiKey=${GEO_IPIFY_API_KEY}&ipAddress=${ipAddress}`;
