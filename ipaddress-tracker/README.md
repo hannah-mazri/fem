@@ -21,7 +21,7 @@ This is a solution to the [IP Address Tracker challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- Get IP address and get location details
+- Get/search IP address and get location details
 
 ### Screenshot
 
