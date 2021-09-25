@@ -4,6 +4,9 @@
   --desaturated-blue: hsl(224, 23%, 55%);
   --bright-blue: hsl(245, 75%, 52%);
   --dark-blue: hsl(223, 47%, 23%);
+
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 .w-screen {
@@ -165,6 +168,10 @@
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 
 /* Font weight */
 .font-medium {
@@ -186,6 +193,9 @@
 }
 
 /* Text color */
+.text-white {
+  color: #fff;
+}
 .text-blue-50 {
   color: var(--very-pale-blue);
 }
