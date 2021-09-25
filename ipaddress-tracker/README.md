@@ -21,7 +21,7 @@ This is a solution to the [IP Address Tracker challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- See hover states for interactive elements
+- Get IP address and get location details
 
 ### Screenshot
 
