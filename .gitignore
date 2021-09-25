@@ -1,4 +1,7 @@
 .idea
 .vscode
 
-**/design
+design
+node_modules
+.env
+apikey.js
